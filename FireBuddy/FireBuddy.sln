@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireBuddy", "FireBuddy\FireBuddy.csproj", "{FFF0FB36-0479-408B-97CF-E525AF00B2A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFF0FB36-0479-408B-97CF-E525AF00B2A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFF0FB36-0479-408B-97CF-E525AF00B2A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFF0FB36-0479-408B-97CF-E525AF00B2A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFF0FB36-0479-408B-97CF-E525AF00B2A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8542A63B-4E61-4E54-9CC8-F82355CB20CE}
+	EndGlobalSection
+EndGlobal

@@ -21,8 +21,7 @@ namespace FireBuddy
 
         private void start_Load(object sender, EventArgs e)
         {
-            Stream str = Properties.Resources.alexander_nakarada_chase;
-            SoundPlayer snd = new SoundPlayer(str);
+            SoundPlayer snd = new SoundPlayer(Properties.Resources.background);
             snd.Play();
         }
     }

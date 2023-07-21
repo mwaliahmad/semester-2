@@ -1,0 +1,15 @@
+D:\GitHub\PD2\Week08\BDMS\BDMS\bin\Debug\BDMS.exe.config
+D:\GitHub\PD2\Week08\BDMS\BDMS\bin\Debug\BDMS.exe
+D:\GitHub\PD2\Week08\BDMS\BDMS\bin\Debug\BDMS.pdb
+D:\GitHub\PD2\Week08\BDMS\BDMS\obj\Debug\BDMS.csproj.AssemblyReference.cache
+D:\GitHub\PD2\Week08\BDMS\BDMS\obj\Debug\BDMS.csproj.CoreCompileInputs.cache
+D:\GitHub\PD2\Week08\BDMS\BDMS\obj\Debug\BDMS.exe
+D:\GitHub\PD2\Week08\BDMS\BDMS\obj\Debug\BDMS.pdb
+D:\GitHub\Project\BDMS-2\BDMS\obj\Debug\BDMS.csproj.AssemblyReference.cache
+D:\GitHub\Project\BDMS-2\BDMS\obj\Debug\BDMS.csproj.SuggestedBindingRedirects.cache
+D:\GitHub\Project\BDMS-2\BDMS\obj\Debug\BDMS.csproj.CoreCompileInputs.cache
+D:\GitHub\Project\BDMS-2\BDMS\obj\Debug\BDMS.exe
+D:\GitHub\Project\BDMS-2\BDMS\obj\Debug\BDMS.pdb
+D:\GitHub\Project\BDMS-2\BDMS\bin\Debug\BDMS.exe.config
+D:\GitHub\Project\BDMS-2\BDMS\bin\Debug\BDMS.exe
+D:\GitHub\Project\BDMS-2\BDMS\bin\Debug\BDMS.pdb

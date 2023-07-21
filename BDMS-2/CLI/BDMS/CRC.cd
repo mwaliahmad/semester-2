@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BDMS.BL.Admin">
+    <Position X="9.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BL\Admin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDMS.BL.Donor">
+    <Position X="4.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAgABAgAAIgAAAgAAAAAAIAAAAgAAARAAABAA=</HashCode>
+      <FileName>BL\Donor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDMS.BL.Employee">
+    <Position X="14" Y="9" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AYACABAABIBAUAgIGFAAAQQAAAAAAAAAgAAAxAgABEA=</HashCode>
+      <FileName>BL\Employee.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EmployeeCRUD" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BDMS.BL.Guest">
+    <Position X="11.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>BL\Guest.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="RequestCRUD" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BDMS.BL.Person">
+    <Position X="5.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAAAAgABAAAAIiEAAgAQAAAAIAAAAgAAARAAIBAA=</HashCode>
+      <FileName>BL\Person.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ListofPerson" />
+      <Property Name="PersonCRUD" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BDMS.BL.Recipient">
+    <Position X="6.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAgABAgAAIgAAAgAAAAAAIAAAAgAAARAAABAA=</HashCode>
+      <FileName>BL\Recipient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDMS.BL.Request">
+    <Position X="9" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAQQAAAAAACgAAAAgAEAAAAA=</HashCode>
+      <FileName>BL\Request.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Admin" />
+      <Property Name="RequestCRUD" />
+      <Property Name="RequestUI" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BDMS.BL.User">
+    <Position X="12" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>BL\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDMS.DL.EmployeeCRUD">
+    <Position X="17" Y="11.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAQAAAIAAAAAAAQACAAABAAAAAAAABAIAAI=</HashCode>
+      <FileName>DL\EmployeeCRUD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDMS.DL.PersonCRUD">
+    <Position X="2" Y="6.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAUAAAAIAAUAAKBIIAAAAgAAAYAAAAAAAAJAAAAAI=</HashCode>
+      <FileName>DL\PersonCRUD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDMS.DL.RequestCRUD">
+    <Position X="10.5" Y="11" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAgCAAASAACQAAAAAAAAACAIEAAAAAA=</HashCode>
+      <FileName>DL\RequestCRUD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDMS.UI.Common">
+    <Position X="12" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>RwBCgwAIAAACAAAAAUIACAAAAAAIAAACAAAEAAFAAAA=</HashCode>
+      <FileName>UI\Common.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="RecipientUI" />
+      <Property Name="DonorUI" />
+      <Property Name="EmployeeUI" />
+      <Property Name="Program" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BDMS.UI.DonorUI">
+    <Position X="2.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>UI\DonorUI.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Donor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BDMS.UI.EmployeeUI">
+    <Position X="15.5" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>CAAAAEAAAAAAAAAAAAAAAAAACAAAAAAIAAAAAFAAAAA=</HashCode>
+      <FileName>UI\EmployeeUI.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Employee" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BDMS.UI.Menu">
+    <Position X="17.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAEAAAAAAAAAAAAAAAAAEAEAAAAAAAA=</HashCode>
+      <FileName>UI\Menu.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Program" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BDMS.UI.PersonUI">
+    <Position X="5.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAEAgAAAA=</HashCode>
+      <FileName>UI\PersonUI.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Person" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BDMS.UI.RecipientUI">
+    <Position X="6.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAgAAAAAAAAAAAAgAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\RecipientUI.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Recipient" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BDMS.UI.RequestUI">
+    <Position X="9" Y="3" Width="1.5" />
+    <Members>
+      <Property Name="Request" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAACAAAAA=</HashCode>
+      <FileName>UI\RequestUI.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Request" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BDMS.UI.UserUI">
+    <Position X="17" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>UI\UserUI.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BDMS.Program">
+    <Position X="14.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAABAAAAAAAAAAAAAAAAAAAAAAAAIBAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

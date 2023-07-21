@@ -60,18 +60,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -82,25 +82,52 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icon-removebg-preview.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\lvl1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lvl2.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Princess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\welcome.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icon-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icon-removebg-preview.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\alexander-nakarada-chase.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\alexander-nakarada-chase.wav" />
+    <None Include="Resources\coin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

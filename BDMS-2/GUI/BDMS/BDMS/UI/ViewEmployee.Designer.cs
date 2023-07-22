@@ -32,8 +32,8 @@
             this.btn_back = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.GV = new System.Windows.Forms.DataGridView();
+            this.btn_view = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btn_pdf = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GV)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +64,7 @@
             // 
             this.GV.AllowUserToDeleteRows = false;
             this.GV.AllowUserToOrderColumns = true;
+            this.GV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.GV.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
@@ -75,12 +76,21 @@
             this.GV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.GV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1});
+            this.btn_view});
             this.GV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GV.Location = new System.Drawing.Point(0, 0);
             this.GV.Name = "GV";
             this.GV.Size = new System.Drawing.Size(526, 232);
             this.GV.TabIndex = 18;
+            this.GV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GV_CellContentClick);
+            // 
+            // btn_view
+            // 
+            this.btn_view.HeaderText = "View Person";
+            this.btn_view.Name = "btn_view";
+            this.btn_view.Text = "Download Data";
+            this.btn_view.UseColumnTextForButtonValue = true;
+            this.btn_view.Width = 102;
             // 
             // btn_pdf
             // 
@@ -95,11 +105,6 @@
             this.btn_pdf.Text = "Download Pdf";
             this.btn_pdf.UseVisualStyleBackColor = false;
             this.btn_pdf.Click += new System.EventHandler(this.btn_pdf_Click);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
             // 
             // ViewEmployee
             // 
@@ -124,6 +129,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView GV;
         private System.Windows.Forms.Button btn_pdf;
-        private System.Windows.Forms.DataGridViewComboBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewButtonColumn btn_view;
     }
 }

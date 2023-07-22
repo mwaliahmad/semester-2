@@ -20,7 +20,6 @@ namespace BDMS.UI
         {
             InitializeComponent();
             Databind();
-            cbBinding();
         }
 
         private void btn_back_Click(object sender, EventArgs e)
@@ -35,8 +34,6 @@ namespace BDMS.UI
                 GV.DataSource = null;
                 GV.DataSource = list;
 
-
-                // GV.Columns[0].HeaderText = "Person";
                 GV.Columns[1].HeaderText = "Name";
                 GV.Columns[2].HeaderText = "Age";
                 GV.Columns[3].HeaderText = "Contact";
@@ -50,27 +47,29 @@ namespace BDMS.UI
                 MessageBox.Show("Not Found Add First to View");
             }
         }
-        List<string> a = new List<string>();
-        private void cbBinding()
-        {
-            DataGridViewComboBoxColumn dataGridViewComboBoxColumn = new DataGridViewComboBoxColumn();
-            foreach (DataGridViewRow row in GV.Rows)
-            {
-                Employee e = EmployeeCRUD.SearchEmployee(row.Cells[5].Value.ToString());
-                //    persons.DataSource = e.GetPeople().Select(x => x.ID1).ToList();
-                DataGridViewComboBoxCell comboBoxCell = new DataGridViewComboBoxCell();
-                comboBoxCell.DataSource = e.GetIDs();
-                comboBoxCell.DisplayStyle = DataGridViewComboBoxDisplayStyle.ComboBox;
-                row.Cells[0] = comboBoxCell;
-            }
-            //dataGridViewComboBoxColumn.DataSource = a;
-            //GV.Columns.Add(dataGridViewComboBoxColumn);
-        }
         private void btn_pdf_Click(object sender, EventArgs e)
         {
             PdfGenerator.GeneratePdfReport(EmployeeCRUD.GetList());
             MessageBox.Show("Downloaded Successfully");
             this.Hide();
+        }
+
+        private void GV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (GV.Columns["btn_view"].Index == e.ColumnIndex)
+            {
+                int row = e.RowIndex;
+                Employee E = EmployeeCRUD.SearchEmployee(GV.Rows[row].Cells[5].Value.ToString());
+                if (E.GetPeople().Count > 0)
+                {
+                    PdfGenerator.GeneratePdfReport(E.GetPeople());
+                    MessageBox.Show("Downloaded Successfully");
+                }
+                else
+                {
+                    MessageBox.Show("This Employee has no DATA");
+                }
+            }
         }
     }
 }

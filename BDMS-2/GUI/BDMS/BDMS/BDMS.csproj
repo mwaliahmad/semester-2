@@ -190,12 +190,6 @@
     <Compile Include="UI\SearchPerson.Designer.cs">
       <DependentUpon>SearchPerson.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Test.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Test.Designer.cs">
-      <DependentUpon>Test.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\UpdateEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,9 +261,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\SearchPerson.resx">
       <DependentUpon>SearchPerson.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Test.resx">
-      <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\UpdateEmployee.resx">
       <DependentUpon>UpdateEmployee.cs</DependentUpon>

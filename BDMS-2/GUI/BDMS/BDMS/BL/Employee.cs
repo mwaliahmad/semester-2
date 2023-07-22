@@ -85,10 +85,6 @@ namespace BDMS.BL
         {
             return People;
         }
-        public List<string> GetIDs()
-        {
-            return People.Select(a => a.ID1).ToList();
-        }
         public void AddPerson(Person P)
         {
             People.Add(P);

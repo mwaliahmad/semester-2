@@ -1,0 +1,14 @@
+D:\GitHub\Project\PacmanGUI\PacmanGUI\bin\Debug\PacmanGUI.exe.config
+D:\GitHub\Project\PacmanGUI\PacmanGUI\bin\Debug\PacmanGUI.exe
+D:\GitHub\Project\PacmanGUI\PacmanGUI\bin\Debug\PacmanGUI.pdb
+D:\GitHub\Project\PacmanGUI\PacmanGUI\obj\Debug\PacmanGUI.csproj.AssemblyReference.cache
+D:\GitHub\Project\PacmanGUI\PacmanGUI\obj\Debug\PacmanGUI.csproj.SuggestedBindingRedirects.cache
+D:\GitHub\Project\PacmanGUI\PacmanGUI\obj\Debug\PacmanGUI.Properties.Resources.resources
+D:\GitHub\Project\PacmanGUI\PacmanGUI\obj\Debug\PacmanGUI.csproj.GenerateResource.cache
+D:\GitHub\Project\PacmanGUI\PacmanGUI\obj\Debug\PacmanGUI.csproj.CoreCompileInputs.cache
+D:\GitHub\Project\PacmanGUI\PacmanGUI\obj\Debug\PacmanGUI.exe
+D:\GitHub\Project\PacmanGUI\PacmanGUI\obj\Debug\PacmanGUI.pdb
+D:\GitHub\Project\PacmanGUI\PacmanGUI\bin\Debug\EZInput.dll
+D:\GitHub\Project\PacmanGUI\PacmanGUI\bin\Debug\EZInput.xml
+D:\GitHub\Project\PacmanGUI\PacmanGUI\obj\Debug\PacmanGUI.Form1.resources
+D:\GitHub\Project\PacmanGUI\PacmanGUI\obj\Debug\PacmanGUI.csproj.CopyComplete

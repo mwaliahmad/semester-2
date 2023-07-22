@@ -172,6 +172,16 @@ namespace FireBuddy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap simplebox {
+            get {
+                object obj = ResourceManager.GetObject("simplebox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SM {
             get {
                 object obj = ResourceManager.GetObject("SM", resourceCulture);

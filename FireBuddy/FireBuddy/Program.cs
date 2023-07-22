@@ -16,7 +16,7 @@ namespace FireBuddy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new start());
+            Application.Run(new Main());
         }
     }
 }

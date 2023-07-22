@@ -100,6 +100,7 @@
             this.GV.AllowUserToAddRows = false;
             this.GV.AllowUserToDeleteRows = false;
             this.GV.AllowUserToOrderColumns = true;
+            this.GV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.GV.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;

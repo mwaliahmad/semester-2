@@ -71,7 +71,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.txt_name, 1, 0);
             this.tableLayoutPanel1.ForeColor = System.Drawing.Color.Red;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(67, 67);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(67, 55);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -270,7 +270,7 @@
             this.tableLayoutPanel2.Controls.Add(this.btn_find, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.txt_find, 0, 0);
             this.tableLayoutPanel2.ForeColor = System.Drawing.Color.Red;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(67, 12);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(67, 1);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));

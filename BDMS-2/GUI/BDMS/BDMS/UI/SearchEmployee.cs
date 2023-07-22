@@ -59,5 +59,6 @@ namespace BDMS.UI
         {
             txt_search.Clear();
         }
+
     }
 }

@@ -9,3 +9,22 @@ D:\GitHub\Project\FB-2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.csproj.GenerateRe
 D:\GitHub\Project\FB-2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.csproj.CoreCompileInputs.cache
 D:\GitHub\Project\FB-2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.exe
 D:\GitHub\Project\FB-2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.pdb
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\bin\Debug\FireBuddy.exe.config
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\bin\Debug\FireBuddy.exe
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\bin\Debug\FireBuddy.pdb
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.csproj.AssemblyReference.cache
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.csproj.SuggestedBindingRedirects.cache
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.Properties.Resources.resources
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.UI.Start.resources
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.csproj.GenerateResource.cache
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.csproj.CoreCompileInputs.cache
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.exe
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.pdb
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.Main.resources
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\bin\Debug\EZInput.dll
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\bin\Debug\EZInput.xml
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.UI.Level1.resources
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.csproj.CopyComplete
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.UI.HowtoPlay.resources
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.UI.Instruction.resources
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.UI.Credits.resources

@@ -1,4 +1,4 @@
-﻿using BDMS.BL;
+﻿sing BDMS.BL;
 using BDMS.DL;
 using System;
 using System.Collections.Generic;
@@ -35,6 +35,22 @@ namespace BDMS.UI
 
             AdminDatabind();
 
+        }
+
+        public EmployeeUI EmployeeUI
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public AdminUI AdminUI
+        {
+            get => default;
+            set
+            {
+            }
         }
 
         private void AdminDatabind()

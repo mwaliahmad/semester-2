@@ -14,3 +14,4 @@ D0011,qqqq,18,A+,    -,Lahore
 D0012,aad,24,B+,1111-1111111,Karachi
 D0013,ddd,21,B+,5555-5555555,Lahore
 D0014,someone,18,A+,0000-0000000,Lahore
+R0002,Ahmad,21,A-,0355-6565656,Islamabad

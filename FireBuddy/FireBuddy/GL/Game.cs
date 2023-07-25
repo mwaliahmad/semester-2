@@ -10,19 +10,20 @@ namespace FireBuddy.GL
 {
     public class Game
     {
-        Player pacman;
+        public Player player;
         GameGrid grid;
         public List<Ghost> ghosts;
+        public List<Fire> Fires = new List<Fire>();
         int score = 0;
         Form gameGUI;
-        public Game(Form gameGUI)
+        public Game(string path, Form gameGUI, int X, int Y)
         {
             this.gameGUI = gameGUI;
-            grid = new GameGrid("Maze1.txt", 26, 70);
-            Image pacManImage = Game.getGameObjectImage('P');
+            grid = new GameGrid(path, X, Y);
+            Image playerImage = Game.getGameObjectImage('P');
             ghosts = new List<Ghost>();
             GameCell startCell = grid.getCell(8, 10);
-            pacman = new Player(pacManImage, startCell);
+            player = new Player(playerImage, startCell);
             printMaze(grid);
 
         }
@@ -34,9 +35,24 @@ namespace FireBuddy.GL
         {
             ghosts.Add(ghost);
         }
+        public void addFire(Fire f)
+        {
+            Fires.Add(f);
+        }
+        public void RemoveFire()
+        {
+            for (int i = 0; i < Fires.Count; i++)
+            {
+                if (Fires[i].Stopped)
+                {
+                    Fires[i].CurrentCell.setGameObject(getBlankGameObject());
+                    Fires.RemoveAt(i);
+                }
+            }
+        }
         public Player getPacManPlayer()
         {
-            return pacman;
+            return player;
         }
         public void addScorePoints(int points)
         {
@@ -95,20 +111,28 @@ namespace FireBuddy.GL
                 img = Properties.Resources.wall1;
             }
 
-            /*if (displayCharacter == '#')
-            {
-                img = Properties.Resources.wall2;
-            }*/
-
-            if (displayCharacter == '.')
+            if (displayCharacter == '$')
             {
                 img = Properties.Resources.coin;
             }
+
             if (displayCharacter == 'P' || displayCharacter == 'p')
             {
                 img = Properties.Resources.Player;
             }
 
+            if (displayCharacter == 'O')
+            {
+                img = Properties.Resources.Hole;
+            }
+            if (displayCharacter == 'W')
+            {
+                img = Properties.Resources.wall3;
+            }
+            if (displayCharacter == '%')
+            {
+                img = Properties.Resources.wall2;
+            }
             return img;
         }
     }

@@ -30,6 +30,22 @@ namespace BDMS.UI
             this.isAdmin = isAdmin;
         }
 
+        public AdminUI AdminUI
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public GuestUI GuestUI
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void btn_search_Click(object sender, EventArgs e)
         {
             if (!isAdmin)

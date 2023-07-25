@@ -22,6 +22,14 @@ namespace BDMS.UI
             Databind();
         }
 
+        public AdminUI AdminUI
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void btn_back_Click(object sender, EventArgs e)
         {
             this.Close();

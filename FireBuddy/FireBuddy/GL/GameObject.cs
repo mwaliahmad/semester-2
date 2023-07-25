@@ -27,16 +27,19 @@ namespace FireBuddy.GL
         public static GameObjectType getGameObjectType(char displayCharacter)
         {
 
-            if (displayCharacter == '|' || displayCharacter == '%' || displayCharacter == '#')
+            if (displayCharacter == '%' || displayCharacter == '#')
             {
                 return GameObjectType.WALL;
             }
 
-            if (displayCharacter == '.')
+            if (displayCharacter == '$')
             {
                 return GameObjectType.REWARD;
             }
-
+            if (displayCharacter == 'O')
+            {
+                return GameObjectType.HOLE;
+            }
             return GameObjectType.NONE;
         }
         public char DisplayCharacter { get => displayCharacter; set => displayCharacter = value; }

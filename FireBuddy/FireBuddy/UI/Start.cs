@@ -29,8 +29,8 @@ namespace FireBuddy.UI
         }
          private void setMusic()
         {
-            SoundPlayer snd = new SoundPlayer(Properties.Resources.background);
-            snd.PlayLooping();
+            /*SoundPlayer snd = new SoundPlayer(Properties.Resources.background);
+            snd.PlayLooping();*/
         }
         private void btn_exit_Click(object sender, EventArgs e)
         {

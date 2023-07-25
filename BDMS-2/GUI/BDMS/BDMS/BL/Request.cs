@@ -15,7 +15,5 @@ namespace BDMS.BL
         }
         public string Value { get => value; set => this.value = value; }
         public int Count { get => count; set => count = value; }
-
-       
     }
 }

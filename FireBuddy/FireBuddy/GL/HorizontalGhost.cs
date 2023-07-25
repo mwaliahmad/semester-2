@@ -10,7 +10,7 @@ namespace FireBuddy.GL
     public class HorizontalGhost : Ghost
     {
         private GameDirection direction = GameDirection.Left;
-
+        private int health = 100;
         public HorizontalGhost(Image ghostImage, GameCell startCell)
             : base(ghostImage)
         {

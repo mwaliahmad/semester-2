@@ -19,6 +19,14 @@ namespace BDMS.UI
             databind();
         }
 
+        public AdminUI AdminUI
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void databind()
         {
             List<Request> list = RequestCRUD.CountRequest();

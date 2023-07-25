@@ -8,7 +8,7 @@ namespace FireBuddy.GL
 {
     public class CollisionDetection
     {
-        public bool isGhostCollideWithPacMan(Ghost ghost)
+        public bool isGhostCollideWithPlayer(Ghost ghost)
         {
             bool flag = false;
             if (ghost.CurrentCell.CurrentGameObject.GameObjectType == GameObjectType.PLAYER)
@@ -18,7 +18,7 @@ namespace FireBuddy.GL
             return flag;
         }
 
-        public bool isPacManCollideWithPallet(GameCell potentialCell)
+        public bool isPlayerCollideWithCoin(GameCell potentialCell)
         {
             bool flag = false;
             if (potentialCell.CurrentGameObject.GameObjectType == GameObjectType.REWARD)
@@ -27,6 +27,17 @@ namespace FireBuddy.GL
             }
             return flag;
 
+        }
+        public bool isEnemyCollideWithBullet(Fire f)
+        {
+            bool flag = false;
+            if (f.nextCell().CurrentGameObject.GameObjectType == GameObjectType.ENEMY)
+            {
+                flag = true;
+                f.Stopped = true;
+            }
+
+            return flag;
         }
     }
 }

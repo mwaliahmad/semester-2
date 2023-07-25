@@ -17,6 +17,7 @@ namespace BDMS.UI
 {
     public class PdfGenerator
     {
+
         public static void GeneratePdfReport<T>(List<T> data)
         {
             // Create a new document

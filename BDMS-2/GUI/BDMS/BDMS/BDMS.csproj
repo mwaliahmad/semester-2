@@ -113,7 +113,6 @@
     <Compile Include="BL\Donor.cs" />
     <Compile Include="BL\Employee.cs" />
     <Compile Include="BL\Guest.cs" />
-    <Compile Include="BL\IEnumberable.cs" />
     <Compile Include="BL\Person.cs" />
     <Compile Include="BL\Recipient.cs" />
     <Compile Include="BL\Request.cs" />
@@ -231,6 +230,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UI\AddEmployee.resx">
       <DependentUpon>AddEmployee.cs</DependentUpon>
@@ -277,6 +277,7 @@
     <EmbeddedResource Include="UI\ViewRequest.resx">
       <DependentUpon>ViewRequest.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="CRC.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -291,7 +292,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\bdcac480-f326-11e9-8aa5-dafa9940739b.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

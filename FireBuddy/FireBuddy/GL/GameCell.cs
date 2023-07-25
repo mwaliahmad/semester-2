@@ -30,7 +30,7 @@ namespace FireBuddy.GL
             pictureBox.Left = col * width;
             pictureBox.Top = row * height;
             pictureBox.Size = new Size(width, height);
-            pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox.BackColor = Color.Transparent;
             this.grid = grid;
         }
@@ -42,55 +42,43 @@ namespace FireBuddy.GL
         }
         public GameCell nextCell(GameDirection direction)
         {
-
-            if (direction == GameDirection.Left)
+            if (direction == GameDirection.Left && col > 0)
             {
-                if (this.col > 0)
+                GameCell cell = grid.getCell(row, col - 1);
+                if (cell.CurrentGameObject.GameObjectType == GameObjectType.NONE || cell.CurrentGameObject.GameObjectType == GameObjectType.PLAYER || cell.CurrentGameObject.GameObjectType == GameObjectType.ENEMY || cell.CurrentGameObject.GameObjectType == GameObjectType.REWARD)
                 {
-                    GameCell ncell = grid.getCell(row, col - 1);
-                    if (ncell.CurrentGameObject.GameObjectType != GameObjectType.WALL)
-                    {
-                        return ncell;
-                    }
+                    return cell;
                 }
             }
 
-            if (direction == GameDirection.Right)
+            if (direction == GameDirection.Right && col < grid.Cols - 1)
             {
-                if (this.col < grid.Cols - 1)
+                GameCell cell2 = grid.getCell(row, col + 1);
+                if (cell2.CurrentGameObject.GameObjectType == GameObjectType.NONE || cell2.CurrentGameObject.GameObjectType == GameObjectType.PLAYER || cell2.CurrentGameObject.GameObjectType == GameObjectType.ENEMY || cell2.CurrentGameObject.GameObjectType == GameObjectType.REWARD)
                 {
-                    GameCell ncell = grid.getCell(this.row, this.col + 1);
-                    if (ncell.CurrentGameObject.GameObjectType != GameObjectType.WALL)
-                    {
-                        return ncell;
-                    }
+                    return cell2;
                 }
             }
 
-            if (direction == GameDirection.Up)
+            if (direction == GameDirection.Up && row > 0)
             {
-                if (this.row > 0)
+                GameCell cell3 = grid.getCell(row - 1, col);
+                if (cell3.CurrentGameObject.GameObjectType == GameObjectType.NONE || cell3.CurrentGameObject.GameObjectType == GameObjectType.PLAYER || cell3.CurrentGameObject.GameObjectType == GameObjectType.ENEMY || cell3.CurrentGameObject.GameObjectType == GameObjectType.REWARD)
                 {
-                    GameCell ncell = grid.getCell(this.row - 1, this.col);
-                    if (ncell.CurrentGameObject.GameObjectType != GameObjectType.WALL)
-                    {
-                        return ncell;
-                    }
+                    return cell3;
                 }
             }
 
-            if (direction == GameDirection.Down)
+            if (direction == GameDirection.Down && row < grid.Rows - 2)
             {
-                if (this.row < grid.Rows - 1)
+                GameCell cell4 = grid.getCell(row + 1, col);
+                if (cell4.CurrentGameObject.GameObjectType == GameObjectType.NONE || cell4.CurrentGameObject.GameObjectType == GameObjectType.PLAYER || cell4.CurrentGameObject.GameObjectType == GameObjectType.ENEMY || cell4.CurrentGameObject.GameObjectType == GameObjectType.REWARD)
                 {
-                    GameCell ncell = grid.getCell(this.row + 1, this.col);
-                    if (ncell.CurrentGameObject.GameObjectType != GameObjectType.WALL)
-                    {
-                        return ncell;
-                    }
+                    return cell4;
                 }
             }
-            return this; // if can not return next cell return its own reference
+
+            return this;
         }
         public int X { get => row; set => row = value; }
         public int Y { get => col; set => col = value; }

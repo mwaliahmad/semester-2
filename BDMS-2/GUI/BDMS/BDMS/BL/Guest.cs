@@ -13,12 +13,5 @@ namespace BDMS.BL
 
         }
 
-        public DL.RequestCRUD RequestCRUD
-        {
-            get => default;
-            set
-            {
-            }
-        }
     }
 }

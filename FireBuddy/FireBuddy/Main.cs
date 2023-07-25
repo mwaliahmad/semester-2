@@ -18,10 +18,10 @@ namespace FireBuddy
         public Main()
         {
             InitializeComponent();
-            setLevel(new Start());
+            setStart(new Start());
             WindowState = FormWindowState.Maximized;
         }
-        public void setForm(Form form)
+        public void setLevel(Level1 form)
         {
             panel_main.Controls.Clear();
             form.TopLevel = false;
@@ -33,7 +33,7 @@ namespace FireBuddy
             form.Show();
         }
 
-        public void setLevel(Start form)
+        public void setStart(Start form)
         {
             panel_main.Controls.Clear();
             form.TopLevel = false;
@@ -50,7 +50,7 @@ namespace FireBuddy
         {
             if(((Start)sender).IsClick)
             {
-                setForm(new Level1());
+                setLevel(new Level1());
             }
         }
     }

@@ -28,3 +28,4 @@ D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.csproj.CopyCompl
 D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.UI.HowtoPlay.resources
 D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.UI.Instruction.resources
 D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.UI.Credits.resources
+D:\GitHub\Project\Sem 2\FireBuddy\FireBuddy\obj\Debug\FireBuddy.UI.Menu.resources

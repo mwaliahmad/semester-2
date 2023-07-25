@@ -18,6 +18,7 @@ namespace BDMS.UI
             InitializeComponent();
             customizeDesign();
         }
+
         private void customizeDesign()
         {
             panel_Emenu.Visible = false;

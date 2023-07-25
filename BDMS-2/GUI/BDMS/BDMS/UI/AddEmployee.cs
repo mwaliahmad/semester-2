@@ -29,7 +29,7 @@ namespace BDMS.UI
             string password = txt_pass.Text;
             if (Validation())
             {
-                if (EmployeeCRUD.SearchEmployee(username) ==null)
+                if (EmployeeCRUD.SearchEmployee(username) == null)
                 {
                     Employee E = new Employee(name, age, contact, cnic, username, password);
                     EmployeeCRUD.AddEmployeeToList(E);
@@ -74,11 +74,11 @@ namespace BDMS.UI
         private bool Validation()
         {
             bool flag = true;
-            if (txt_name.Text == null|| txt_contact.Text.Length != 12 ||txt_cnic.Text.Length != 15||txt_user.Text.Length != 5 || txt_pass.Text.Length != 5)
+            if (txt_name.Text == null || txt_contact.Text.Length != 12 || txt_cnic.Text.Length != 15 || txt_user.Text.Length != 5 || txt_pass.Text.Length != 5)
             {
                 flag = false;
             }
-            
+
             return flag;
         }
     }

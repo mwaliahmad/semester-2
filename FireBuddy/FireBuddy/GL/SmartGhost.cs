@@ -10,6 +10,8 @@ namespace FireBuddy.GL
    public class SmartGhost : Ghost
     {
         private GameDirection direction = GameDirection.Left;
+        private int health = 100;
+
         Game g;
         public SmartGhost(Image ghostImage, GameCell startCell, Game g)
             : base(ghostImage)

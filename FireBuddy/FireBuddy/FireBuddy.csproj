@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GL\CollisionDetection.cs" />
+    <Compile Include="GL\Fire.cs" />
     <Compile Include="GL\GameCell.cs" />
     <Compile Include="GL\GameDirection.cs" />
     <Compile Include="GL\GameGrid.cs" />
@@ -95,6 +96,12 @@
     <Compile Include="UI\Level1.Designer.cs">
       <DependentUpon>Level1.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Start.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Level1.resx">
       <DependentUpon>Level1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Start.resx">
       <DependentUpon>Start.cs</DependentUpon>
@@ -199,6 +209,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\background.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hole.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pallet.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

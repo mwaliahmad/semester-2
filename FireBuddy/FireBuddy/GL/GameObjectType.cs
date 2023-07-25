@@ -12,6 +12,8 @@ namespace FireBuddy.GL
         PLAYER,
         ENEMY,
         REWARD,
+        HOLE,
+        FIRE,
         NONE
     }
 }

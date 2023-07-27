@@ -29,8 +29,41 @@ namespace FireBuddy
             panel_main.Controls.Add(form);
             form.Dock = DockStyle.Fill;
             panel_main.Tag = form;
+            form.menu_btn += Form_menu_btn;
+            form.nextlvl_btn += Form_nextlvl_btn;
             form.BringToFront();
             form.Show();
+        }
+        public void setLevel2(Level2 form)
+        {
+            panel_main.Controls.Clear();
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            panel_main.Controls.Add(form);
+            form.Dock = DockStyle.Fill;
+            panel_main.Tag = form;
+            form.menu_btn += Form_menu_btn1;
+            form.BringToFront();
+            form.Show();
+        }
+
+        private void Form_menu_btn1(object sender, EventArgs e)
+        {
+
+            panel_main.Controls.Clear();
+            setStart(new Start());
+        }
+
+        private void Form_nextlvl_btn()
+        {
+            setLevel2(new Level2());
+        }
+
+        private void Form_menu_btn(object sender, EventArgs e)
+        {
+            panel_main.Controls.Clear();
+            setStart(new Start());
+
         }
 
         public void setStart(Start form)
@@ -48,7 +81,7 @@ namespace FireBuddy
 
         private void Form_start_btn(object sender, EventArgs e)
         {
-            if(((Start)sender).IsClick)
+            if (((Start)sender).IsClick)
             {
                 setLevel(new Level1());
             }

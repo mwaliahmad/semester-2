@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FireBuddy.GL.CollisionDetection" Collapsed="true">
+    <Position X="10.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAABAAAQAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GL\CollisionDetection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBuddy.GL.Fire" Collapsed="true">
+    <Position X="8.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAIACCAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>GL\Fire.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBuddy.GL.Game" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAkUCAAgIAAAABAABIAgAAAAAAAASBCAIAAAgAAIA=</HashCode>
+      <FileName>GL\Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBuddy.GL.GameCell" Collapsed="true">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAQAQAAAAwACACIAAADgAAAAAAAAYAA=</HashCode>
+      <FileName>GL\GameCell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBuddy.GL.GameGrid" Collapsed="true">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAEIAAABAAIACAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GL\GameGrid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBuddy.GL.GameObject" Collapsed="true">
+    <Position X="6" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAABAAAAEgAAQBAAAEAAEAAAABA=</HashCode>
+      <FileName>GL\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBuddy.GL.Ghost" Collapsed="true">
+    <Position X="3.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>GL\Ghost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBuddy.GL.HorizontalGhost" Collapsed="true">
+    <Position X="6.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIACAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>GL\HorizontalGhost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBuddy.GL.Player" Collapsed="true">
+    <Position X="10.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GL\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBuddy.GL.SmartGhost" Collapsed="true">
+    <Position X="2.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIACAAAAAAAAAAAAAAABIAACAAAAAAAA=</HashCode>
+      <FileName>GL\SmartGhost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBuddy.GL.VerticalGhost" Collapsed="true">
+    <Position X="4.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIACAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>GL\VerticalGhost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBuddy.GL.RandomGhost" Collapsed="true">
+    <Position X="0.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIACAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>GL\RandomGhost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBuddy.UI.Credits" Collapsed="true">
+    <Position X="19" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>UI\Credits.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBuddy.UI.HowtoPlay" Collapsed="true">
+    <Position X="17.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAABAAAACAAAACAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>UI\HowtoPlay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBuddy.UI.Instruction" Collapsed="true">
+    <Position X="15.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>UI\Instruction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBuddy.UI.Level1" Collapsed="true">
+    <Position X="11.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAQQACAgAFAAgSCoiAACgAAACYELAAAAFEAAEyQ=</HashCode>
+      <FileName>UI\Level1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBuddy.UI.Level2" Collapsed="true">
+    <Position X="14.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAQQACAgAFAAgSCIQAACgAAAAIALAAAAEEAAEiQ=</HashCode>
+      <FileName>UI\Level2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBuddy.UI.Menu" Collapsed="true">
+    <Position X="12.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAAAAAQAQCAQAAAAAACQAACCAAAAAIAAABAAAUQQACA=</HashCode>
+      <FileName>UI\Menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBuddy.UI.Start" Collapsed="true">
+    <Position X="16.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAAAQQIAQCAAAAAAAACYAAKCAQABQICEASEAAUAAgAA=</HashCode>
+      <FileName>UI\Start.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBuddy.Main" Collapsed="true">
+    <Position X="14.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCAAAAAgACAAABAAAACAAAACAAAAAoAAAQAAAAAAAAA=</HashCode>
+      <FileName>Main.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="FireBuddy.GL.GameDirection" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAI=</HashCode>
+      <FileName>GL\GameDirection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FireBuddy.GL.GameObjectType" Collapsed="true">
+    <Position X="9" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAEAAAAAAQAgyABAAAAAAAAAAAABQgAAAAA=</HashCode>
+      <FileName>GL\GameObjectType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FireBuddy.GL.GameGhostImage" Collapsed="true">
+    <Position X="1.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAACAAAAAAAAAAAAAABAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>GL\GhostImage.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

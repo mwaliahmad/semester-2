@@ -20,9 +20,9 @@ namespace FireBuddy.GL
         {
             this.gameGUI = gameGUI;
             grid = new GameGrid(path, X, Y);
-            Image playerImage = Game.getGameObjectImage('P');
+            Image playerImage = getGameObjectImage('P');
             ghosts = new List<Ghost>();
-            GameCell startCell = grid.getCell(8, 10);
+            GameCell startCell = grid.getCell(24, 5);
             player = new Player(playerImage, startCell);
             printMaze(grid);
 
@@ -34,6 +34,10 @@ namespace FireBuddy.GL
         public void addGhost(Ghost ghost)
         {
             ghosts.Add(ghost);
+        }
+        public void deleteGhost(Ghost ghost)
+        {
+            ghosts.Remove(ghost);
         }
         public void addFire(Fire f)
         {
@@ -91,14 +95,14 @@ namespace FireBuddy.GL
             return Properties.Resources.HM;
         }
 
-        /*public Image getPinkGhostImage()
+        public Image getRandomGhostImage()
         {
-            return Properties.Resources.;
+            return Properties.Resources.FM;
         }
-        public Image getOrangeGhostImage()
+        public Image getSmartGhostImage()
         {
-            return Properties.Resources.;
-        }*/
+            return Properties.Resources.SM;
+        }
 
         public static Image getGameObjectImage(char displayCharacter)
         {
@@ -132,6 +136,10 @@ namespace FireBuddy.GL
             if (displayCharacter == '%')
             {
                 img = Properties.Resources.wall2;
+            }
+            if (displayCharacter == 'Q')
+            {
+                img = Properties.Resources.Princess;
             }
             return img;
         }

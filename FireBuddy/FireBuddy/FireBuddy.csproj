@@ -52,13 +52,13 @@
   <ItemGroup>
     <Compile Include="GL\CollisionDetection.cs" />
     <Compile Include="GL\Fire.cs" />
+    <Compile Include="GL\RandomGhost.cs" />
     <Compile Include="GL\GameCell.cs" />
     <Compile Include="GL\GameDirection.cs" />
     <Compile Include="GL\GameGrid.cs" />
     <Compile Include="GL\GameObject.cs" />
     <Compile Include="GL\GameObjectType.cs" />
     <Compile Include="GL\Ghost.cs" />
-    <Compile Include="GL\GhostImage.cs" />
     <Compile Include="GL\HorizontalGhost.cs" />
     <Compile Include="GL\Player.cs" />
     <Compile Include="GL\SmartGhost.cs" />
@@ -96,6 +96,12 @@
     <Compile Include="UI\Level1.Designer.cs">
       <DependentUpon>Level1.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Level2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Level2.Designer.cs">
+      <DependentUpon>Level2.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,12 +134,16 @@
     <EmbeddedResource Include="UI\Level1.resx">
       <DependentUpon>Level1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\Level2.resx">
+      <DependentUpon>Level2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Start.resx">
       <DependentUpon>Start.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="CRC.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

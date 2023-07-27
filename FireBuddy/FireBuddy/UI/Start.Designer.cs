@@ -238,6 +238,7 @@
             this.sub_panel.Name = "sub_panel";
             this.sub_panel.Size = new System.Drawing.Size(800, 192);
             this.sub_panel.TabIndex = 7;
+            this.sub_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.sub_panel_Paint);
             // 
             // Start
             // 

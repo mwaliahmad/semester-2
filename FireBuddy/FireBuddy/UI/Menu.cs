@@ -41,6 +41,7 @@ namespace FireBuddy.UI
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Game Over");
             Environment.Exit(0);
         }
 

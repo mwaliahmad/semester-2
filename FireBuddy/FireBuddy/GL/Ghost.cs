@@ -9,10 +9,9 @@ namespace FireBuddy.GL
 {
     public abstract class Ghost : GameObject
     {
-        public Ghost(Image ghostImage) : base(GameObjectType.ENEMY, ghostImage)
+        public Ghost(Image ghostImage,GameObjectType type) : base(type, ghostImage)
         {
         }
-
 
         public abstract GameCell nextCell();
         public abstract void move(GameCell gameCell);

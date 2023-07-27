@@ -8,6 +8,7 @@ namespace FireBuddy.GL
 {
     public class CollisionDetection
     {
+
         public bool isGhostCollideWithPlayer(Ghost ghost)
         {
             bool flag = false;
@@ -17,7 +18,15 @@ namespace FireBuddy.GL
             }
             return flag;
         }
-
+        public bool isGhostCollideWithBullet(Ghost ghost)
+        {
+            bool flag = false;
+            if (ghost.nextCell().CurrentGameObject.GameObjectType == GameObjectType.FIRE)
+            {
+                flag = true;
+            }
+            return flag;
+        }
         public bool isPlayerCollideWithCoin(GameCell potentialCell)
         {
             bool flag = false;
@@ -28,15 +37,44 @@ namespace FireBuddy.GL
             return flag;
 
         }
-        public bool isEnemyCollideWithBullet(Fire f)
+        public bool isHMCollideWithBullet(Fire f)
         {
             bool flag = false;
-            if (f.nextCell().CurrentGameObject.GameObjectType == GameObjectType.ENEMY)
+            if (f.nextCell().CurrentGameObject.GameObjectType == GameObjectType.HM)
             {
-                flag = true;
                 f.Stopped = true;
+                flag = true;
             }
-
+            return flag;
+        }
+        public bool isVMCollideWithBullet(Fire f)
+        {
+            bool flag = false;
+            if (f.nextCell().CurrentGameObject.GameObjectType == GameObjectType.VM)
+            {
+                f.Stopped = true;
+                flag = true;
+            }
+            return flag;
+        }
+        public bool isRMCollideWithBullet(Fire f)
+        {
+            bool flag = false;
+            if (f.nextCell().CurrentGameObject.GameObjectType == GameObjectType.RM)
+            {
+                f.Stopped = true;
+                flag = true;
+            }
+            return flag;
+        }
+        public bool isSMCollideWithBullet(Fire f)
+        {
+            bool flag = false;
+            if (f.nextCell().CurrentGameObject.GameObjectType == GameObjectType.SM)
+            {
+                f.Stopped = true;
+                flag = true;
+            }
             return flag;
         }
     }

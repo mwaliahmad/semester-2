@@ -29,8 +29,8 @@ namespace FireBuddy.UI
         }
          private void setMusic()
         {
-            /*SoundPlayer snd = new SoundPlayer(Properties.Resources.background);
-            snd.PlayLooping();*/
+            SoundPlayer snd = new SoundPlayer(Properties.Resources.background);
+            snd.PlayLooping();
         }
         private void btn_exit_Click(object sender, EventArgs e)
         {
@@ -84,6 +84,11 @@ namespace FireBuddy.UI
         {
             setForm(new Credits());
             sub_panel.Show();
+        }
+
+        private void sub_panel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -40,6 +40,10 @@ namespace FireBuddy.GL
             {
                 return GameObjectType.HOLE;
             }
+            if (displayCharacter == 'Q')
+            {
+                return GameObjectType.QUEEN;
+            }
             return GameObjectType.NONE;
         }
         public char DisplayCharacter { get => displayCharacter; set => displayCharacter = value; }

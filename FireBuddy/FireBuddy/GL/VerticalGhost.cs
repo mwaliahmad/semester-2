@@ -10,9 +10,8 @@ namespace FireBuddy.GL
     public class VerticalGhost : Ghost
     {
         GameDirection direction = GameDirection.Down;
-        private int health = 100;
 
-        public VerticalGhost(Image ghostImage, GameCell startCell) : base(ghostImage)
+        public VerticalGhost(Image ghostImage, GameCell startCell) : base(ghostImage,GameObjectType.VM)
         {
             this.CurrentCell = startCell;
         }

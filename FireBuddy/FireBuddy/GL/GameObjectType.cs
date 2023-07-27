@@ -10,7 +10,11 @@ namespace FireBuddy.GL
     {
         WALL,
         PLAYER,
-        ENEMY,
+        QUEEN,
+        HM,
+        VM,
+        RM,
+        SM,
         REWARD,
         HOLE,
         FIRE,

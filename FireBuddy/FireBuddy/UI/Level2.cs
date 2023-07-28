@@ -21,6 +21,7 @@ namespace FireBuddy.UI
         char movementStatus = 'd';
         int jumpCount = 0;
         SmartGhost g4;
+        Queen q;
         public event EventHandler menu_btn;
         public Level2()
         {
@@ -33,6 +34,9 @@ namespace FireBuddy.UI
         {
             g4 = new SmartGhost(game.getSmartGhostImage(), game.getCell(8, 16), game);
             game.addGhost(g4);
+            q = new Queen(game.getQueenImage(), game.getCell(3, 28));
+            game.addGhost(q);
+
         }
         private void MoveFire()
         {
@@ -45,6 +49,8 @@ namespace FireBuddy.UI
                     if (SM.Value <= 0)
                     {
                         game.deleteGhost(g4);
+                        GameCell c = game.getCell(4, 28);
+                        c.setGameObject(new GameObject(GameObjectType.NONE, '%'));
                     }
                 }
                 f.move(f.nextCell());
@@ -59,9 +65,10 @@ namespace FireBuddy.UI
             form.StartPosition = FormStartPosition.CenterScreen;
             form.BringToFront();
             form.resume_btn += Form_resume_btn;
-            form.menu_btn += Form_menu_btn;
+            form.menu_btn += Form_menu_btn; ;
             form.Show();
         }
+
         private void Form_menu_btn(object sender, EventArgs e)
         {
             this.Close();
@@ -85,7 +92,6 @@ namespace FireBuddy.UI
                         player.Value -= 10;
                         if (player.Value == 0)
                         {
-
                             MessageBox.Show("Game over");
                             Environment.Exit(0);
                         }
@@ -130,6 +136,12 @@ namespace FireBuddy.UI
             if (collider.isPlayerCollideWithCoin(potentialNewCell))
             {
                 game.addScorePoints(1);
+            }
+            if (potentialNewCell.CurrentGameObject.GameObjectType == GameObjectType.QUEEN)
+            {
+                game.deleteGhost(q);
+                MessageBox.Show("Game Complete");
+                Environment.Exit(0);     
             }
             currentCell.setGameObject(Game.getBlankGameObject());
             player.move(potentialNewCell);

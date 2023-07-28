@@ -103,7 +103,10 @@ namespace FireBuddy.GL
         {
             return Properties.Resources.SM;
         }
-
+        public Image getQueenImage()
+        {
+            return Properties.Resources.Princess;
+        }
         public static Image getGameObjectImage(char displayCharacter)
         {
 

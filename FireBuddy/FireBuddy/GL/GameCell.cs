@@ -45,7 +45,7 @@ namespace FireBuddy.GL
             if (direction == GameDirection.Left && col > 0)
             {
                 GameCell cell = grid.getCell(row, col - 1);
-                if (cell.CurrentGameObject.GameObjectType == GameObjectType.NONE || cell.CurrentGameObject.GameObjectType == GameObjectType.PLAYER || cell.CurrentGameObject.GameObjectType == GameObjectType.HM || cell.CurrentGameObject.GameObjectType == GameObjectType.VM|| cell.CurrentGameObject.GameObjectType == GameObjectType.RM || cell.CurrentGameObject.GameObjectType == GameObjectType.SM || cell.CurrentGameObject.GameObjectType == GameObjectType.REWARD || cell.CurrentGameObject.GameObjectType == GameObjectType.HOLE)
+                if (cell.CurrentGameObject.GameObjectType == GameObjectType.NONE || cell.CurrentGameObject.GameObjectType == GameObjectType.PLAYER || cell.CurrentGameObject.GameObjectType == GameObjectType.HM || cell.CurrentGameObject.GameObjectType == GameObjectType.VM|| cell.CurrentGameObject.GameObjectType == GameObjectType.RM || cell.CurrentGameObject.GameObjectType == GameObjectType.SM || cell.CurrentGameObject.GameObjectType == GameObjectType.REWARD || cell.CurrentGameObject.GameObjectType == GameObjectType.HOLE || cell.CurrentGameObject.GameObjectType == GameObjectType.QUEEN)
                 {
                     return cell;
                 }
@@ -54,7 +54,7 @@ namespace FireBuddy.GL
             if (direction == GameDirection.Right && col < grid.Cols - 1)
             {
                 GameCell cell2 = grid.getCell(row, col + 1);
-                if (cell2.CurrentGameObject.GameObjectType == GameObjectType.NONE || cell2.CurrentGameObject.GameObjectType == GameObjectType.PLAYER || cell2.CurrentGameObject.GameObjectType == GameObjectType.HM || cell2.CurrentGameObject.GameObjectType == GameObjectType.VM || cell2.CurrentGameObject.GameObjectType == GameObjectType.RM || cell2.CurrentGameObject.GameObjectType == GameObjectType.SM || cell2.CurrentGameObject.GameObjectType == GameObjectType.REWARD || cell2.CurrentGameObject.GameObjectType == GameObjectType.HOLE)
+                if (cell2.CurrentGameObject.GameObjectType == GameObjectType.NONE || cell2.CurrentGameObject.GameObjectType == GameObjectType.PLAYER || cell2.CurrentGameObject.GameObjectType == GameObjectType.HM || cell2.CurrentGameObject.GameObjectType == GameObjectType.VM || cell2.CurrentGameObject.GameObjectType == GameObjectType.RM || cell2.CurrentGameObject.GameObjectType == GameObjectType.SM || cell2.CurrentGameObject.GameObjectType == GameObjectType.REWARD || cell2.CurrentGameObject.GameObjectType == GameObjectType.HOLE || cell2.CurrentGameObject.GameObjectType == GameObjectType.QUEEN)
                 {
                     return cell2;
                 }
@@ -63,7 +63,7 @@ namespace FireBuddy.GL
             if (direction == GameDirection.Up && row > 0)
             {
                 GameCell cell3 = grid.getCell(row - 1, col);
-                if (cell3.CurrentGameObject.GameObjectType == GameObjectType.NONE || cell3.CurrentGameObject.GameObjectType == GameObjectType.PLAYER || cell3.CurrentGameObject.GameObjectType == GameObjectType.HM || cell3.CurrentGameObject.GameObjectType == GameObjectType.VM || cell3.CurrentGameObject.GameObjectType == GameObjectType.RM || cell3.CurrentGameObject.GameObjectType == GameObjectType.SM || cell3.CurrentGameObject.GameObjectType == GameObjectType.REWARD || cell3.CurrentGameObject.GameObjectType == GameObjectType.HOLE)
+                if (cell3.CurrentGameObject.GameObjectType == GameObjectType.NONE || cell3.CurrentGameObject.GameObjectType == GameObjectType.PLAYER || cell3.CurrentGameObject.GameObjectType == GameObjectType.HM || cell3.CurrentGameObject.GameObjectType == GameObjectType.VM || cell3.CurrentGameObject.GameObjectType == GameObjectType.RM || cell3.CurrentGameObject.GameObjectType == GameObjectType.SM || cell3.CurrentGameObject.GameObjectType == GameObjectType.REWARD || cell3.CurrentGameObject.GameObjectType == GameObjectType.HOLE || cell3.CurrentGameObject.GameObjectType == GameObjectType.QUEEN)
                 {
                     return cell3;
                 }
@@ -72,7 +72,7 @@ namespace FireBuddy.GL
             if (direction == GameDirection.Down && row < grid.Rows - 2)
             {
                 GameCell cell4 = grid.getCell(row + 1, col);
-                if (cell4.CurrentGameObject.GameObjectType == GameObjectType.NONE || cell4.CurrentGameObject.GameObjectType == GameObjectType.PLAYER || cell4.CurrentGameObject.GameObjectType == GameObjectType.HM || cell4.CurrentGameObject.GameObjectType == GameObjectType.VM || cell4.CurrentGameObject.GameObjectType == GameObjectType.RM || cell4.CurrentGameObject.GameObjectType == GameObjectType.SM || cell4.CurrentGameObject.GameObjectType == GameObjectType.REWARD || cell4.CurrentGameObject.GameObjectType == GameObjectType.HOLE)
+                if (cell4.CurrentGameObject.GameObjectType == GameObjectType.NONE || cell4.CurrentGameObject.GameObjectType == GameObjectType.PLAYER || cell4.CurrentGameObject.GameObjectType == GameObjectType.HM || cell4.CurrentGameObject.GameObjectType == GameObjectType.VM || cell4.CurrentGameObject.GameObjectType == GameObjectType.RM || cell4.CurrentGameObject.GameObjectType == GameObjectType.SM || cell4.CurrentGameObject.GameObjectType == GameObjectType.REWARD || cell4.CurrentGameObject.GameObjectType == GameObjectType.QUEEN || cell4.CurrentGameObject.GameObjectType == GameObjectType.HOLE)
                 {
                     return cell4;
                 }

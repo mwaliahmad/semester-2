@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="GL\CollisionDetection.cs" />
     <Compile Include="GL\Fire.cs" />
+    <Compile Include="GL\Queen.cs" />
     <Compile Include="GL\RandomGhost.cs" />
     <Compile Include="GL\GameCell.cs" />
     <Compile Include="GL\GameDirection.cs" />
